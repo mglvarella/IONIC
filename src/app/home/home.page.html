@@ -1,20 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+    <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-img (click)= "detalhesFilme()" src="https://br.web.img3.acsta.net/r_1920_1080/pictures/22/03/29/15/28/0425380.jpg" class="posterprincipal"></ion-img>
+      </ion-col>
+    </ion-row>
+      <ion-row class="postersmenores">
+        <ion-col size-xs="6" size-md="3">
+          <ion-img (click)= "detalhesFilme()" src="https://br.web.img2.acsta.net/r_1920_1080/img/04/2d/042d966bb9935710b264c69cb3c36dbc.jpg"></ion-img>
+          
+        </ion-col>
+        <ion-col size-xs="6" size-md="3">
+          <ion-img (click)= "detalhesFilme()" src="https://br.web.img3.acsta.net/r_1920_1080/img/e7/aa/e7aa3aafba98ec994c06794f81c50c00.jpg"></ion-img>
+        </ion-col>
+        <ion-col size-xs="6" size-md="3">
+          <ion-img (click)= "detalhesFilme()" src="https://br.web.img2.acsta.net/r_1920_1080/img/e7/b0/e7b0d17d328de7af403c669a098c0d64.jpg"></ion-img>
+        </ion-col>
+        <ion-col size-xs="6" size-md="3">
+          <ion-img (click)= "detalhesFilme()" src="https://br.web.img2.acsta.net/r_1920_1080/img/ef/cb/efcbb84d6a2f25ca12779702ec3715b6.jpg"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
